@@ -1,6 +1,6 @@
 # 📘 Elastic Stack (ELK Stack) Installation Guide on Ubuntu 22.04
 ![Project-img](1.png)
-````markdown
+---
 ## 🧰 Prerequisites
 
 - **Operating System**: Ubuntu 22.04 LTS  
@@ -11,8 +11,7 @@
   sudo apt update
   sudo apt install -y openjdk-11-jdk
   java -version
-````
-
+  ```
 ---
 
 ## 🔐 Step 1: Add Elastic Repository and GPG Key
