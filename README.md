@@ -298,8 +298,11 @@ You should see the Kibana dashboard.
 ---
 ![dashboard](11.png)
 ---
+Click on the Discover tab and filter the specific filebeat pattern to load the visualizations.
 ---
-
+![dashboard](12.png)
+---
+![dashboard](13.png)
 ---
 
 **Feel free to reach out if you need further assistance or customization for your setup!**
