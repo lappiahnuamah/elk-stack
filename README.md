@@ -1,6 +1,6 @@
 Here is the `.md` (Markdown) version of your Elastic Stack (ELK Stack) Installation Guide:
 ---
-!(1.png)[Project-img]
+![1.png](Project-img)
 ---
 ````markdown
 # 📘 Elastic Stack (ELK Stack) Installation Guide on Ubuntu 22.04
