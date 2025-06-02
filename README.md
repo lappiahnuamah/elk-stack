@@ -1,8 +1,6 @@
-Here is the `.md` (Markdown) version of your Elastic Stack (ELK Stack) Installation Guide:
-
-````markdown
 # 📘 Elastic Stack (ELK Stack) Installation Guide on Ubuntu 22.04
-
+![Project-img](1.png)
+---
 ## 🧰 Prerequisites
 
 - **Operating System**: Ubuntu 22.04 LTS  
@@ -13,8 +11,7 @@ Here is the `.md` (Markdown) version of your Elastic Stack (ELK Stack) Installat
   sudo apt update
   sudo apt install -y openjdk-11-jdk
   java -version
-````
-
+  ```
 ---
 
 ## 🔐 Step 1: Add Elastic Repository and GPG Key
