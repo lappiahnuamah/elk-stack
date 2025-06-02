@@ -6,12 +6,13 @@
 - **Operating System**: Ubuntu 22.04 LTS  
 - **User Privileges**: A non-root user with sudo privileges  
 - **System Requirements**: Minimum 4 GB RAM and 2 CPUs  
-- **Java Installation**: Required for Elasticsearch and Logstash  
-  ```bash
+- **Java Installation**: Required for Elasticsearch and Logstash
+```bash
   sudo apt update
   sudo apt install -y openjdk-11-jdk
   java -version
-  ```
+```
+![java version](2.png)
 ---
 
 ## 🔐 Step 1: Add Elastic Repository and GPG Key
