@@ -108,8 +108,20 @@ Install Logstash:
 sudo apt install -y logstash
 ```
 
-Create a basic Logstash configuration file:
+Create a configuration file called 02-beats-input.conf
 
+```bash
+sudo nano /etc/logstash/conf.d/02-beats-input.conf
+```
+```bash
+input {
+  beats {
+    port => 5044
+  }
+}
+```
+---
+Create a configuration file called logstash.conf
 ```bash
 sudo nano /etc/logstash/conf.d/logstash.conf
 ```
@@ -117,11 +129,6 @@ sudo nano /etc/logstash/conf.d/logstash.conf
 Example configuration:
 
 ```ruby
-input {
-  beats {
-    port => 5044
-  }
-}
 output {
   elasticsearch {
     hosts => ["localhost:9200"]
