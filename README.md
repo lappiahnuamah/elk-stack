@@ -289,9 +289,15 @@ Visit Kibana via browser:
 ```
 http://your_server_ip
 ```
+or using it locally access it here 
+```
+http://localhost:5601
+```
 
 You should see the Kibana dashboard.
-
+---
+![dashboard](11.png)
+---
 ---
 
 ---
