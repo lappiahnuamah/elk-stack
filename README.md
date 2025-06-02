@@ -91,7 +91,13 @@ Enable and start Kibana:
 sudo systemctl enable kibana
 sudo systemctl start kibana
 ```
-
+---
+open this url in the browser
+```bash
+http://localhost:5601/status
+```
+---
+![localhost](6.png)
 ---
 
 ## 🔄 Step 4: Install and Configure Logstash
