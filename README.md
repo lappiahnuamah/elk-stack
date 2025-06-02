@@ -218,10 +218,16 @@ Enable and start Filebeat:
 sudo systemctl enable filebeat
 sudo systemctl start filebeat
 ```
+Check if Elasticsearch is receiving data from filebeat:
 
+```bash
+curl -XGET 'http://localhost:9200/filebeat-*/_search?pretty'```
+```
+---
+![elasticsearch](10.png)
 ---
 
-## 🌐 Step 6: Configure Nginx as a Reverse Proxy for Kibana
+## 🌐 Step 6: Configure Nginx as a Reverse Proxy for Kibana if using a server
 
 Install Nginx:
 
