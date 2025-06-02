@@ -183,8 +183,8 @@ output.logstash:
   hosts: ["localhost:5044"]
 ```
 Save and close the file
----
 
+---
 Enable and configure the system module:
 
 ```bash
