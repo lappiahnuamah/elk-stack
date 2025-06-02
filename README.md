@@ -130,12 +130,30 @@ Example configuration:
 
 ```ruby
 output {
-  elasticsearch {
-    hosts => ["localhost:9200"]
-    index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
+  if [@metadata][pipeline] {
+ elasticsearch {
+   hosts => ["localhost:9200"]
+   manage_template => false
+   index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+   pipeline => "%{[@metadata][pipeline]}"
+ }
+  } else {
+ elasticsearch {
+   hosts => ["localhost:9200"]
+   manage_template => false
+   index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+ }
   }
 }
 ```
+---
+Run test for logstash configuration
+```bash
+sudo -u logstash /usr/share/logstash/bin/logstash --path.settings /etc/logstash -t
+```
+---
+![localhost](7.png)
+---
 
 Enable and start Logstash:
 
