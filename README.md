@@ -60,7 +60,9 @@ Test Elasticsearch:
 ```bash
 curl -X GET http://localhost:9200
 ```
-
+---
+![localhost](5.png)
+---
 ---
 
 ## 📊 Step 3: Install and Configure Kibana
