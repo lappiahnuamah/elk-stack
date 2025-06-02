@@ -304,7 +304,10 @@ Click on the Discover tab and filter the specific filebeat pattern to load the v
 ---
 ![dashboard](13.png)
 ---
-
+![dashboard](14.png)
+---
+![dashboard](15.png)
+---
 **Feel free to reach out if you need further assistance or customization for your setup!**
 
 
