@@ -194,9 +194,24 @@ sudo filebeat modules enable system
 Set up Filebeat:
 
 ```bash
-sudo filebeat setup
+sudo filebeat setup --pipelines --modules system
 ```
+Load the setup template into elastic search:
 
+```bash
+sudo filebeat setup --index-management -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'
+```
+---
+![localhost](8.png)
+---
+Create the index pattern and load the dashboards into Kibana:
+
+```bash
+sudo filebeat setup -E output.logstash.enabled=false -E output.elasticsearch.hosts=['localhost:9200'] -E setup.kibana.host=localhost:5601
+```
+---
+![localhost](9.png)
+---
 Enable and start Filebeat:
 
 ```bash
