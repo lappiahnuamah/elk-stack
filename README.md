@@ -306,7 +306,11 @@ Click on the Discover tab and filter the specific filebeat pattern to load the v
 ---
 ![dashboard](14.png)
 ---
+You can also view which users have used the sudo command and when: 
 ![dashboard](15.png)
+---
+You can also you users and the usergroup on your server 
+![dashboard](16.png)
 ---
 **Feel free to reach out if you need further assistance or customization for your setup!**
 
