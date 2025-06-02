@@ -171,6 +171,19 @@ Install Filebeat:
 ```bash
 sudo apt install -y filebeat
 ```
+open a configuration file called etc/filebeat/filebeat.yml
+
+```bash
+sudo nano /etc/filebeat/filebeat.yml
+```
+Uncomment these part in the file
+```ruby
+output.logstash:
+  # The Logstash hosts
+  hosts: ["localhost:5044"]
+```
+Save and close the file
+---
 
 Enable and configure the system module:
 
