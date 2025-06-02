@@ -1,10 +1,6 @@
-Here is the `.md` (Markdown) version of your Elastic Stack (ELK Stack) Installation Guide:
----
-![Project-img](1.png)
----
 ````markdown
 # 📘 Elastic Stack (ELK Stack) Installation Guide on Ubuntu 22.04
-
+![Project-img](1.png)
 ## 🧰 Prerequisites
 
 - **Operating System**: Ubuntu 22.04 LTS  
